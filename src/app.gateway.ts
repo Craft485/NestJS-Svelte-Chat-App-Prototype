@@ -1,4 +1,4 @@
-import { Logger, Render } from '@nestjs/common';
+import { Logger } from '@nestjs/common';
 import {
   OnGatewayConnection,
   OnGatewayDisconnect,
@@ -8,7 +8,7 @@ import {
   WsResponse,
 } from '@nestjs/websockets';
 // Imported typings
-import { Server, Socket } from 'socket.io';
+import { Socket } from 'socket.io';
 
 @WebSocketGateway()
 export class AppGateway
@@ -16,11 +16,11 @@ export class AppGateway
 {
   private logger: Logger = new Logger('AppGateway');
 
-  afterInit(server: Server) {
+  afterInit() {
     this.logger.log('Inittialized!');
   }
 
-  handleConnection(socket: Socket, ...args: any[]) {
+  handleConnection(socket: Socket) {
     this.logger.log(`Client connected: ${socket.id}`);
     socket.join('room1');
   }
