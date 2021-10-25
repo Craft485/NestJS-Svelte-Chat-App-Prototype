@@ -28,6 +28,14 @@
         margin: 0;
         padding: 0;
     }
+
+    header {
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        text-align: center;
+    }
+
     main {
         position: absolute;
         z-index: 10;
