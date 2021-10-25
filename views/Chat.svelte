@@ -5,7 +5,7 @@
   
 <svelte:head>
   <!-- HTML Content to Insert Into Head -->
-  <title>Home</title>
+  <title>Chat</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.min.js" integrity="sha512-2hIBfT6wur46uR5ayhmyICuA8s15BvJhagB+jZImgktQAy832P7EuY8njl1HGp4YS0Sk8DXRo9dByhvD3jfDxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script defer src="./JS/chat.js"></script>
   <link rel="stylesheet" href="./styles/chat.css">
